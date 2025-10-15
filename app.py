@@ -13,6 +13,7 @@ import numpy as np
 import cv2
 import json
 from pathlib import Path
+from huggingface_hub import hf_hub_download
 
 
 #
@@ -85,6 +86,21 @@ RECYCLING_INFO = {
 def load_model():
     """Load the trained model"""
     print(f"Loading model on {config.DEVICE}...")
+
+
+      # Download from Hub if not local
+    if not Path(config.MODEL_PATH).exists():
+        print("Downloading model from Hugging Face Hub...")
+        try:
+            hf_hub_download(
+                repo_id="AyobamiMichael/ecoscan-model",
+                filename="ecoscan_model.pth",
+                local_dir="model",
+                repo_type="model"
+            )
+        except Exception as e:
+            print(f"Error downloading model: {e}")
+            raise
 
     # Check if model file exists
     if not Path(config.MODEL_PATH).exists():
