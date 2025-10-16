@@ -523,6 +523,6 @@ if __name__ == "__main__":
         server_port=7860,
         share=True,
         show_error=True,
-        debug=True,
-        show_api=False
+        debug=True
+    
     )
