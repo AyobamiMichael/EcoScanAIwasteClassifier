@@ -1,3 +1,15 @@
+
+title: EcoScan - AI Waste Classifier
+emoji: 🌱
+colorFrom: green
+colorTo: blue
+sdk: gradio
+sdk_version: 4.44.0
+app_file: app.py
+pinned: false
+license: mit
+
+
 # 🌱 EcoScan - AI-Powered Waste Sorting Classifier
 
 ![EcoScan Banner](https://img.shields.io/badge/AI-Waste_Classification-green?style=for-the-badge)
