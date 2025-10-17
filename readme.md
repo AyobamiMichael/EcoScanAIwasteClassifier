@@ -47,7 +47,7 @@ An intelligent waste classification system that helps promote smart recycling an
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/ecoscan.git
+git clone https://github.com/AyobamiMichael/EcoScanAIwasteClassifier.git
 cd ecoscan
 
 # Install dependencies
